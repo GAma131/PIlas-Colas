@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="969.0" style="-fx-background-color: #3C4048;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScene">
+   <children>
+      <TextField alignment="CENTER" editable="false" layoutX="17.0" layoutY="14.0" prefHeight="51.0" prefWidth="934.0" style="-fx-background-color: #00ABB3;" styleClass="font-" text="PILAS &amp; COLAS">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="17.0" layoutY="76.0" prefHeight="273.0" prefWidth="458.0" style="-fx-background-color: #B2B2B2;">
+         <children>
+            <TextArea fx:id="txtPila" layoutX="318.0" layoutY="34.0" prefHeight="137.0" prefWidth="50.0" />
+            <Label layoutX="190.0" layoutY="38.0" />
+            <Button fx:id="btnTamano" layoutX="50.0" layoutY="34.0" mnemonicParsing="true" onAction="#btnAsignarTamano" text="Asignar tamaño de pila =" />
+            <TextField fx:id="txtTamano" layoutX="200.0" layoutY="34.0" prefHeight="25.0" prefWidth="50.0" />
+            <TextField fx:id="txtTope" layoutX="354.0" layoutY="183.0" prefHeight="25.0" prefWidth="29.0" />
+            <Label layoutX="331.0" layoutY="14.0" text="PILA" />
+            <Label layoutX="259.0" layoutY="187.0" text="Tope (posición):" />
+            <Label layoutX="259.0" layoutY="217.0" text="Tope (valor):" />
+            <TextField fx:id="txtTopeV" layoutX="354.0" layoutY="213.0" prefHeight="25.0" prefWidth="29.0" />
+            <Button fx:id="btnPop" layoutX="50.0" layoutY="98.0" mnemonicParsing="true" onAction="#btnDoPop" text="Bajar Tope" />
+            <Button fx:id="btnPopValor" layoutX="129.0" layoutY="98.0" mnemonicParsing="true" onAction="#btnDoPopValor" text="Eliminar valor =" />
+            <TextField fx:id="txtTopeValor" layoutX="225.0" layoutY="98.0" prefHeight="25.0" prefWidth="50.0" />
+            <Button fx:id="btnVaciar" layoutX="47.0" layoutY="183.0" mnemonicParsing="true" onAction="#btnDoVaciar" text="Vaciar Todo" />
+            <Button fx:id="btnAgregarValor" layoutX="50.0" layoutY="66.0" mnemonicParsing="true" onAction="#btnDoAgregarValor" text="Agregar nuevo Valor =" />
+            <TextField fx:id="txtNValor" layoutX="190.0" layoutY="66.0" prefHeight="25.0" prefWidth="50.0" />
+         </children></Pane>
+      <Pane layoutX="493.0" layoutY="76.0" prefHeight="273.0" prefWidth="458.0" style="-fx-background-color: #B2B2B2;">
+         <children>
+            <TextArea fx:id="txtCola" layoutX="46.0" layoutY="188.0" prefHeight="51.0" prefWidth="198.0" />
+            <Label layoutX="190.0" layoutY="38.0" />
+            <Button fx:id="btnTamanoCola" layoutX="50.0" layoutY="34.0" mnemonicParsing="true" onAction="#btnAsignarTamanoCola" text="Asignar tamaño de la Cola =" />
+            <TextField fx:id="txtTamanoCola" layoutX="220.0" layoutY="34.0" prefHeight="25.0" prefWidth="50.0" />
+            <TextField fx:id="txtInicioCola" layoutX="302.0" layoutY="183.0" prefHeight="25.0" prefWidth="29.0" />
+            <Label layoutX="103.0" layoutY="166.0" text="COLA" />
+            <Label layoutX="259.0" layoutY="187.0" text="Inicio" />
+            <Label layoutX="259.0" layoutY="217.0" text="Final" />
+            <TextField fx:id="txtFinalCola" layoutX="302.0" layoutY="213.0" prefHeight="25.0" prefWidth="29.0" />
+            <Button fx:id="btnPopValorCola" layoutX="48.0" layoutY="98.0" mnemonicParsing="true" onAction="#btnDoPopValorCola" text="Eliminar valor =" />
+            <TextField fx:id="txtValorCola" layoutX="153.0" layoutY="98.0" prefHeight="25.0" prefWidth="50.0" />
+            <Button fx:id="btnVaciarCola" layoutX="344.0" layoutY="124.0" mnemonicParsing="true" onAction="#btnDoVaciarCola" text="Vaciar Todo" />
+            <Button fx:id="btnAgregarValorCola" layoutX="50.0" layoutY="66.0" mnemonicParsing="true" onAction="#btnDoAgregarValorCola" text="Agregar nuevo Valor =" />
+            <TextField fx:id="txtNValorCola" layoutX="190.0" layoutY="66.0" prefHeight="25.0" prefWidth="50.0" />
+            <Button fx:id="btnDesencolar" layoutX="50.0" layoutY="130.0" mnemonicParsing="true" onAction="#btnDoDesencolar" text="Desencolar" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
